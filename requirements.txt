@@ -1,0 +1,4 @@
+flask
+groq
+cerebras-cloud-sdk
+python-dotenv
