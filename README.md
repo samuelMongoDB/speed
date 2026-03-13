@@ -20,6 +20,9 @@ Providers like **Groq** and **Cerebras** offer dramatically faster inference wit
 - **Reasoning support** — handles chain-of-thought models (shows "reasoning..." indicator, displays only the final answer)
 - **Markdown rendering** — full markdown with syntax-highlighted code blocks, tables, etc.
 - **Racing UI** — speed bars, winner detection, and a telemetry dashboard
+<img width="1486" height="859" alt="Screenshot 2026-03-13 at 18 36 00" src="https://github.com/user-attachments/assets/677eaab1-d49c-42e9-8960-8c2a31fec45d" />
+
+
 
 ## Setup
 
