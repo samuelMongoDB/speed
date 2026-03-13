@@ -6,25 +6,20 @@ Side-by-side speed comparison of LLM inference providers. Race **Groq** vs **Cer
 
 ## Why This Exists
 
-In RAG architectures, we often focus on vector search latency — single-digit milliseconds is achievable. But in practice, the user experience is dominated by LLM inference — often several seconds, sometimes up to half a minute. A faster embedding or vector search step doesn't move the needle if the LLM call is the bottleneck.
+In RAG architectures, we often focus on vector search latency — single-digit milliseconds is achievable with solutions like Atlas Vector Search. But in practice, the user experience is dominated by LLM inference — often several seconds, sometimes up to half a minute. A faster vector search step doesn't move the needle if the LLM call is the real bottleneck.
 
-Providers like **Groq** and **Cerebras** offer dramatically faster inference on capable models. Groq's free tier is generous enough for demos and prototyping, and includes models like GPT OSS 120B that work well for RAG use cases. This tool lets you **compare models and providers side-by-side** so you can pick the best option before integrating into your project.
+Pairing **fast vector search** (Atlas Vector Search) with **fast LLM inference** (Groq, Cerebras) is where things get interesting. When both layers are fast, the end-to-end RAG experience becomes genuinely snappy — and that's what users actually feel.
+
+Providers like **Groq** and **Cerebras** offer dramatically faster inference with generous free tiers that are more than good enough for demos and prototyping. This tool lets you **compare providers and models side-by-side** so you can pick the best option before integrating into your project.
 
 ## Features
 
 - **Compare mode** — race two models side-by-side with a unified scoreboard (tokens, time, TTFT, tok/s)
 - **Auto-detect** — selecting a model available on both providers auto-enables compare mode
 - **Streaming** — real-time token streaming with live speed telemetry
-- **Reasoning models** — handles chain-of-thought models (shows "reasoning..." indicator, displays only the final answer)
+- **Reasoning support** — handles chain-of-thought models (shows "reasoning..." indicator, displays only the final answer)
 - **Markdown rendering** — full markdown with syntax-highlighted code blocks, tables, etc.
 - **Racing UI** — speed bars, winner detection, and a telemetry dashboard
-
-## Supported Models
-
-| Provider | Models |
-|----------|--------|
-| **Groq** | `openai/gpt-oss-120b`, `moonshotai/kimi-k2-instruct`, `qwen/qwen3-32b`, `openai/gpt-oss-20b`, `meta-llama/llama-4-scout-17b-16e-instruct`, `llama-3.3-70b-versatile` |
-| **Cerebras** | `gpt-oss-120b`, `llama3.1-8b` |
 
 ## Setup
 
