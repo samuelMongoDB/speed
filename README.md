@@ -1,6 +1,6 @@
 # SPEED — LLM Inference Racing
 
-Side-by-side speed comparison of LLM inference providers. Race **Groq** vs **Cerebras** on the same (or different) models and see real-time streaming speed, tokens per second, and time-to-first-token — all in a racing telemetry UI.
+Side-by-side speed comparison of LLM inference providers. Race **Groq** vs **Cerebras** on the same (or different) models and see real-time streaming speed, tokens per second, and time-to-first-token. All in a racing telemetry UI.
 
 ![Python](https://img.shields.io/badge/python-3.9+-blue) ![Flask](https://img.shields.io/badge/flask-latest-green)
 
